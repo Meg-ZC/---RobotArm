@@ -55,11 +55,12 @@
      <Compile Include="Assets\Script\TextScript.cs" />
      <Compile Include="Assets\Script\RobotArm1.cs" />
      <Compile Include="Assets\Script\RobotArm2.cs" />
+     <Compile Include="Assets\Script\CollectionZ.cs" />
      <Compile Include="Assets\Script\CollectionY.cs" />
+     <Compile Include="Assets\Script\CollectionX.cs" />
      <Compile Include="Assets\Script\BaseControl.cs" />
      <Compile Include="Assets\Script\CommonBehavior.cs" />
-     <Compile Include="Assets\Script\CollectionZ.cs" />
-     <Compile Include="Assets\Script\CollectionX.cs" />
+     <Compile Include="Assets\Script\RotationController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2020.3.22f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
