@@ -7,15 +7,17 @@ public class RobotArm2 : CommonBehavior
     void Start()
     {
         upperBound = 0.66f;
-        lowerBound = 0;
-        originRotation = transform.rotation.x;
+        lowerBound = -upperBound;
+        originRotation = transform.localRotation.x;
         direction = 'x';
         boundDiff = upperBound - lowerBound;
+        ParamaterSetter(lowerBound,upperBound);
     }
 
     private void Update()
     {
+        TargetUpdate();
         RotateObj(target * boundDiff,direction);
-        Debug.Log(transform.rotation);
+        // Debug.Log(transform.rotation);
     }
 }

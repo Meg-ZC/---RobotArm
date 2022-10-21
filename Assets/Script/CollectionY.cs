@@ -7,15 +7,17 @@ public class CollectionY : CommonBehavior
     void Start()
     {
         upperBound = 1f;
-        lowerBound = 0;
-        originRotation = transform.rotation.y;
+        lowerBound = -upperBound;
+        originRotation = transform.localRotation.y;
         direction = 'y';
         boundDiff = upperBound - lowerBound;
+        ParamaterSetter(lowerBound,upperBound);
     }
 
     private void Update()
     {
+        TargetUpdate();
         RotateObj(target * boundDiff,direction);
-        Debug.Log(transform.rotation);
+        // Debug.Log(transform.rotation);
     }
 }
