@@ -27,11 +27,11 @@ public class RotationController : MonoBehaviour
         if(PlayerPrefs.HasKey("r1"))
         {
             rotation1.value = PlayerPrefs.GetFloat("r1");
-            rotation1.value = PlayerPrefs.GetFloat("r2");
-            rotation1.value = PlayerPrefs.GetFloat("r3");
-            rotation1.value = PlayerPrefs.GetFloat("r4");
-            rotation1.value = PlayerPrefs.GetFloat("r5");
-            rotation1.value = PlayerPrefs.GetFloat("r6");
+            rotation2.value = PlayerPrefs.GetFloat("r2");
+            rotation3.value = PlayerPrefs.GetFloat("r3");
+            rotation4.value = PlayerPrefs.GetFloat("r4");
+            rotation5.value = PlayerPrefs.GetFloat("r5");
+            rotation6.value = PlayerPrefs.GetFloat("r6");
         }
     }
 }
